@@ -19,7 +19,7 @@ const MyStack = () => {
           options={{ title: 'Home' }}
         />
         
-        <Stack.Screen name="CodeInTheDark" component={CID} />
+        <Stack.Screen name="CodeInTheDasrk" component={CID} />
         <Stack.Screen name="ValorantChampionship" component={VChampionship} />
       </Stack.Navigator>
     </NavigationContainer>

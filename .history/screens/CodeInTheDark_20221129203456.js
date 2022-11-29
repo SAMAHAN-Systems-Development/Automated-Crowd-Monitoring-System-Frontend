@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { BarCodeScanner } from 'expo-barcode-scanner';
-import { StyleSheet, View, Button, Text, Pressable, Alert} from 'react-native'
-import {Image} from 'react-native'; 
+import { StyleSheet, View, Text, Pressable, Alert} from 'react-native'
 
 const Home = ({navigation}) => {
     console.log("App is working!");
@@ -50,17 +49,19 @@ if(hasPermission === null) {
   //return the output in page
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           <Text>CODE IN THE DARK</Text>
-            <View style={styles.barcodebox}>
-      
-      <BarCodeScanner
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-          style={{ height: 550, width: 500}} />
-      </View>     
-      <Text style={styles.maintext}>{text}</Text>
-      {scanned && <Button title={'SCAN AGAIN'} onPress={() => setScanned(false)} color='#FAC302' />}
-           
-      
+            <View style={styles.container}>
+                <View style={styles.smiley}>
+            <Text>CODE IN THE DARK</Text>
+            <Image
+          style={{width: 100, height:100}} 
+          source={require('/assets/Smiley.png')}
+          />
+      </View>
+
+
+
+            </View>
+            <View></View>
             </View>
         
     )
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
     },
   
     barcodebox: {
-      marginTop: 10,
+      marginTop: 500,
       backgroundColor: 'fff',
       alignItems: 'center',
       justifyContent: 'center',
@@ -89,12 +90,22 @@ const styles = StyleSheet.create({
     },
     maintext: {
       fontSize: 20,
-      color: 'black',
-      margin: 10,
-      marginBottom: 20
+      color: 'white'
       
     },
-   
+    image: {
+      marginTop: 100
+    },
+    smiley: {
+      marginBottom: -450,
+      marginTop: 100
+    },
+    Requestcontainer: {
+      backgroundColor: '#13142A'
+    },
+    title: {
+      color: 'red'
+    }
     
     
   });

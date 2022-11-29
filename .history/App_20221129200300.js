@@ -7,7 +7,6 @@ import HomeScreen from './screens/Home'
 import CID from './screens/CodeInTheDark'
 import VChampionship from './screens/ValorantChampionship'
 
-const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
   return (
@@ -25,9 +24,6 @@ const MyStack = () => {
     </NavigationContainer>
   );
 };
-
-
-
 export default MyStack
 
 

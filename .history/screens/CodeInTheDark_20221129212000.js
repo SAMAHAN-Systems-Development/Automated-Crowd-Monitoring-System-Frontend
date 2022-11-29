@@ -50,7 +50,7 @@ if(hasPermission === null) {
   //return the output in page
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           <Text>CODE IN THE DARK</Text>
+           
             <View style={styles.barcodebox}>
       
       <BarCodeScanner
@@ -90,7 +90,6 @@ const styles = StyleSheet.create({
     maintext: {
       fontSize: 20,
       color: 'black',
-      margin: 10,
       marginBottom: 20
       
     },

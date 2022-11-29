@@ -50,7 +50,12 @@ if(hasPermission === null) {
   //return the output in page
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           <Text>CODE IN THE DARK</Text>
+            <View style={styles.container}>
+                <View style={styles.smiley}>
+            
+            
+      </View>
+            </View>
             <View style={styles.barcodebox}>
       
       <BarCodeScanner
@@ -60,7 +65,10 @@ if(hasPermission === null) {
       <Text style={styles.maintext}>{text}</Text>
       {scanned && <Button title={'SCAN AGAIN'} onPress={() => setScanned(false)} color='#FAC302' />}
            
+      <View style={styles.image}>
       
+        </View>
+            
             </View>
         
     )
@@ -77,7 +85,7 @@ const styles = StyleSheet.create({
     },
   
     barcodebox: {
-      marginTop: 10,
+      marginTop: 500,
       backgroundColor: 'fff',
       alignItems: 'center',
       justifyContent: 'center',
@@ -89,12 +97,22 @@ const styles = StyleSheet.create({
     },
     maintext: {
       fontSize: 20,
-      color: 'black',
-      margin: 10,
-      marginBottom: 20
+      color: 'white'
       
     },
-   
+    image: {
+      marginTop: 100
+    },
+    smiley: {
+      marginBottom: -450,
+      marginTop: 100
+    },
+    Requestcontainer: {
+      backgroundColor: '#13142A'
+    },
+    title: {
+      color: 'red'
+    }
     
     
   });

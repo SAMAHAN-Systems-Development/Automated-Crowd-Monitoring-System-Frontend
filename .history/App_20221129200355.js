@@ -8,7 +8,6 @@ import CID from './screens/CodeInTheDark'
 import VChampionship from './screens/ValorantChampionship'
 
 const Stack = createNativeStackNavigator();
-
 const MyStack = () => {
   return (
     <NavigationContainer>

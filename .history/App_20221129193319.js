@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState, useEffect} from 'react';
 import { StyleSheet, Text, View, Alert, Button, Pressable, onPress } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/Home'
 import CID from './screens/CodeInTheDark'
 import VChampionship from './screens/ValorantChampionship'
+
 
 const Stack = createNativeStackNavigator();
 
@@ -26,15 +26,4 @@ const MyStack = () => {
   );
 };
 
-
-
 export default MyStack
-
-
-  
- 
-  
-  
-
-
-

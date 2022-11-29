@@ -1,5 +1,5 @@
+
 import React, {useState, useEffect} from 'react'
-import { BarCodeScanner } from 'expo-barcode-scanner';
 import { StyleSheet, View, Button, Text, Pressable, Alert} from 'react-native'
 import {Image} from 'react-native'; 
 
@@ -20,7 +20,8 @@ const Home = ({navigation}) => {
 useEffect(() => {
     askForCameraPermission();
   }, []);
-  
+
+
   const handleBarCodeScanned = ({type, data}) => {
     setScanned(true);
     setText(data);
@@ -28,7 +29,8 @@ useEffect(() => {
   
   }
 
-  //check permission
+
+   //check permission
 if(hasPermission === null) {
     return(
       <View style={styles.container}>
@@ -48,10 +50,11 @@ if(hasPermission === null) {
   )
   }
   //return the output in page
+
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           <Text>CODE IN THE DARK</Text>
-            <View style={styles.barcodebox}>
+            <Text>VALORANT CHAMPIONSHIP</Text>
+             <View style={styles.barcodebox}>
       
       <BarCodeScanner
           onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
@@ -61,12 +64,13 @@ if(hasPermission === null) {
       {scanned && <Button title={'SCAN AGAIN'} onPress={() => setScanned(false)} color='#FAC302' />}
            
       
-            </View>
-        
+            
+        </View>
     )
 }
 
 export default Home
+
 
 const styles = StyleSheet.create({
     container: {
