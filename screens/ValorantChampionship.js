@@ -53,7 +53,7 @@ if(hasPermission === null) {
 
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>VALORANT CHAMPIONSHIP</Text>
+           
              <View style={styles.barcodebox}>
       
       <BarCodeScanner

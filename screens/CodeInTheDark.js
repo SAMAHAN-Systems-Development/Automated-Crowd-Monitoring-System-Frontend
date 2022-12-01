@@ -50,7 +50,7 @@ if(hasPermission === null) {
   //return the output in page
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           <Text>CODE IN THE DARK</Text>
+          
             <View style={styles.barcodebox}>
       
       <BarCodeScanner

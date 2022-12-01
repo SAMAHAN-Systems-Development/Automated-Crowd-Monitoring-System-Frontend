@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/Home'
 import CID from './screens/CodeInTheDark'
 import VChampionship from './screens/ValorantChampionship'
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,11 +17,44 @@ const MyStack = () => {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'Home' }}
+          options={{ title: 'Home',
+          headerStyle: {
+            backgroundColor: '#13142A'
+            
+          },
+          headerTitleStyle: {
+            color: 'white'
+          }
+          }}
+          
         />
-        
-        <Stack.Screen name="CodeInTheDark" component={CID} />
-        <Stack.Screen name="ValorantChampionship" component={VChampionship} />
+        <Stack.Screen name="CodeInTheDark" 
+        component={CID} 
+        options={{ title: 'Code In The Dark',
+        headerStyle: {
+          backgroundColor: '#13142A'
+          
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}
+        />
+        <Stack.Screen name="ValorantChampionship"
+        component={VChampionship} 
+        options={{ title: 'Valorant Championship',
+        headerStyle: {
+          backgroundColor: '#13142A'
+          
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
