@@ -27,13 +27,12 @@ const Home = ({ navigation }) => {
       return userData;
     }
     catch (error) {
-      console.log('[ERROR on getUserData] error');
+      console.log('[ERROR on getUserData]');
       return error.toJSON();
     }
   }
 
   async function setHasEntered(id, bool=true) { // DEFAULTS TO TRUE
-
     try {
       const userEntered = await axios.put(`https://sysdev-acms-api.onrender.com/api/users/${id}`, {
         entered: bool
@@ -42,7 +41,23 @@ const Home = ({ navigation }) => {
       return userEntered;
     }
     catch (error) {
-      console.log('[ERROR on setHasEntered] error');
+      console.log('[ERROR on setHasEntered]');
+      return error.toJSON();
+    }
+  }
+
+  async function addEntryLog(id, data) {
+    try {
+      const entryLog = await axios.post(`https://sysdev-acms-api.onrender.com/api/log`, {
+        id: id,
+        surname: data.LASTNAME
+      },
+      {params: config})
+
+      return entryLog;
+    }
+    catch (error) {
+      console.log('[ERROR on addEntryLog]');
       return error.toJSON();
     }
   }
@@ -69,6 +84,15 @@ const Home = ({ navigation }) => {
     var userEntered = await setHasEntered(data);
     if (userEntered.status === 200) {
       console.log(`[USER ENTERED STATUS] ${userEntered.data.msg}`);
+
+      // IF ENTERED, ADD TO LOG
+      var log = await addEntryLog(data, user.data);
+      if (log.status == 201) {
+        console.log(`ADDED LOG FOR ${data}`);
+      }
+      else {
+        console.log("[USER NOT LOGGED]");
+      }
     }
     else if (userEntered.status === 404) {
       console.log(`[USER NOT FOUND]`);
