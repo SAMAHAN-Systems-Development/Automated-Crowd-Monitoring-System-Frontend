@@ -5,7 +5,7 @@ import { Image } from "react-native";
 import axios from "axios";
 
 // CONFIGS
-import config from '../configurations/_SheetsTestingConfig';
+import config from '../configurations/_config_SheetsTesting.js';
 
 const Home = ({ navigation }) => {
   console.log("App is working!");
@@ -96,20 +96,12 @@ const Home = ({ navigation }) => {
     );
   }
   //return the output in page
-<<<<<<< HEAD
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>CODE IN THE DARK</Text>
-      <View style={styles.barcodebox}>
-        <BarCodeScanner
-=======
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
           
             <View style={styles.barcodebox}>
       
       <BarCodeScanner
->>>>>>> 19ad400dec96914710127797db87dee31dfe6087
           onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
           style={{ height: 550, width: 500 }}
         />
