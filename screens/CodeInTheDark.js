@@ -4,6 +4,9 @@ import { StyleSheet, View, Button, Text, Pressable, Alert } from "react-native";
 import { Image } from "react-native";
 import axios from "axios";
 
+// CONFIGS
+import config from '../configurations/_SheetsTestingConfig';
+
 const Home = ({ navigation }) => {
   console.log("App is working!");
   const [hasPermission, setHasPermission] = useState(null);
@@ -20,7 +23,7 @@ const Home = ({ navigation }) => {
 
   async function getUserData(id) {
     try {
-      const userData = await axios.get(`https://sysdev-acms-api.onrender.com/api/users/${id}`);
+      const userData = await axios.get(`https://sysdev-acms-api.onrender.com/api/users/${id}`, {params: config});
       return userData;
     }
     catch (error) {
@@ -34,7 +37,8 @@ const Home = ({ navigation }) => {
     try {
       const userEntered = await axios.put(`https://sysdev-acms-api.onrender.com/api/users/${id}`, {
         entered: bool
-      })
+      },
+      {params: config})
       return userEntered;
     }
     catch (error) {
