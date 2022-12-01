@@ -15,45 +15,48 @@ const MyStack = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: 'Home',
-          headerStyle: {
-            backgroundColor: '#13142A'
+        name="Home"
+        component={HomeScreen}
+        options={{ title: 'Home',
+        headerStyle: {
+        backgroundColor: '#13142A'
             
           },
-          headerTitleStyle: {
-            color: 'white'
-          }
-          }}
+        headerTitleStyle: {
+        color: 'white'
+        },
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
           
         />
         <Stack.Screen name="CodeInTheDark" 
         component={CID} 
         options={{ title: 'Code In The Dark',
         headerStyle: {
-          backgroundColor: '#13142A'
+        backgroundColor: '#13142A'
           
         },
         headerTitleStyle: {
           color: 'white'
         },
-        headerTintColor: 'white'}}
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
         />
         <Stack.Screen name="ValorantChampionship"
         component={VChampionship} 
         options={{ title: 'Valorant Championship',
         headerStyle: {
-          backgroundColor: '#13142A'
+        backgroundColor: '#13142A'
           
         },
         headerTitleStyle: {
           color: 'white'
         },
-        headerTitleStyle: {
-          color: 'white'
-        },
-        headerTintColor: 'white'}}
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
         />
       </Stack.Navigator>
     </NavigationContainer>
