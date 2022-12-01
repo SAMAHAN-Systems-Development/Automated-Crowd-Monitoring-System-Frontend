@@ -17,25 +17,15 @@ const MyStack = () => {
         <Stack.Screen
         name="Home"
         component={HomeScreen}
-        options={{ title: 'Home',
-        headerStyle: {
-        backgroundColor: '#13142A'
-            
-          },
-        headerTitleStyle: {
-        color: 'white'
-        },
-        headerTintColor: 'white',
-        headerTitleAlign: 'center'
+        options={{ title: 'Home', headerShown: false,
         }}
-          
         />
+
         <Stack.Screen name="CodeInTheDark" 
         component={CID} 
         options={{ title: 'Code In The Dark',
         headerStyle: {
         backgroundColor: '#13142A'
-          
         },
         headerTitleStyle: {
           color: 'white'
@@ -44,12 +34,13 @@ const MyStack = () => {
         headerTitleAlign: 'center'
         }}
         />
+
+
         <Stack.Screen name="ValorantChampionship"
         component={VChampionship} 
         options={{ title: 'Valorant Championship',
         headerStyle: {
         backgroundColor: '#13142A'
-          
         },
         headerTitleStyle: {
           color: 'white'
@@ -62,8 +53,6 @@ const MyStack = () => {
     </NavigationContainer>
   );
 };
-
-
 
 export default MyStack
 
