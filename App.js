@@ -4,8 +4,12 @@ import { StyleSheet, Text, View, Alert, Button, Pressable, onPress } from 'react
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/Home'
-import CID from './screens/CodeInTheDark'
-import VChampionship from './screens/ValorantChampionship'
+import MachineLearning from './screens/MachineLearning'
+import AI from './screens/AI'
+import GameDesign from './screens/GameDesign'
+import UIUX from './screens/UIUX'
+import DataMining from './screens/DataMining'
+import Technopreneurship from './screens/Technopreneurship'
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Stack = createNativeStackNavigator();
@@ -21,9 +25,9 @@ const MyStack = () => {
         }}
         />
 
-        <Stack.Screen name="CodeInTheDark" 
-        component={CID} 
-        options={{ title: 'Code In The Dark',
+        <Stack.Screen name="MachineLearning" 
+        component={MachineLearning} 
+        options={{ title: 'Machine Learning',
         headerStyle: {
         backgroundColor: '#13142A'
         },
@@ -36,9 +40,9 @@ const MyStack = () => {
         />
 
 
-        <Stack.Screen name="ValorantChampionship"
-        component={VChampionship} 
-        options={{ title: 'Valorant Championship',
+        <Stack.Screen name="AI"
+        component={AI} 
+        options={{ title: 'Artificial Intelligence',
         headerStyle: {
         backgroundColor: '#13142A'
         },
@@ -49,6 +53,68 @@ const MyStack = () => {
         headerTitleAlign: 'center'
         }}
         />
+
+
+        <Stack.Screen name="GameDesign"
+        component={GameDesign} 
+        options={{ title: 'Game Design',
+        headerStyle: {
+        backgroundColor: '#13142A'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
+        />
+
+        <Stack.Screen name="UIUX"
+        component={UIUX} 
+        options={{ title: 'UI/UX Development',
+        headerStyle: {
+        backgroundColor: '#13142A'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
+        />
+
+
+        <Stack.Screen name="DataMining"
+        component={DataMining} 
+        options={{ title: 'Data Mining & Statistical Analysis',
+        headerStyle: {
+        backgroundColor: '#13142A'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
+        />
+
+        <Stack.Screen name="Technopreneurship"
+        component={Technopreneurship} 
+        options={{ title: 'Technopreneurship',
+        headerStyle: {
+        backgroundColor: '#13142A'
+        },
+        headerTitleStyle: {
+          color: 'white'
+        },
+        headerTintColor: 'white',
+        headerTitleAlign: 'center'
+        }}
+        />
+
+
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );
