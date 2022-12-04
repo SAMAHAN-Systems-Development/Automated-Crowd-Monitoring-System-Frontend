@@ -112,9 +112,6 @@ const MyStack = () => {
         }}
         />
 
-
-
-
       </Stack.Navigator>
     </NavigationContainer>
   );

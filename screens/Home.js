@@ -5,7 +5,7 @@ const Home = ({navigation}) => {
 
     return (
         <View style={styles.container}>
-             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
             <Pressable style={styles.button1} onPress={() => navigation.navigate('MachineLearning')}>
                 <Text style={styles.Text}>MACHINE LEARNING</Text>
             </Pressable>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         elevation: 1,
         backgroundColor: '#FAC302',
+        width: 260
         
 
     },
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         elevation: 1,
         backgroundColor: '#FAC302',
+        width: 260
 
     }
 })
