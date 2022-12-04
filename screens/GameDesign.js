@@ -20,6 +20,7 @@ const Home = ({ navigation }) => {
     })();
   };
   //req camera permission
+  
 
   async function getUserData(id) {
     try {

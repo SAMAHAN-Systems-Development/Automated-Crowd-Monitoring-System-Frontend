@@ -6,11 +6,23 @@ const Home = ({navigation}) => {
     return (
         <View style={styles.container}>
              <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Pressable style={styles.button1} onPress={() => navigation.navigate('CodeInTheDark')}>
-                <Text style={styles.Text}>CODE IN THE DARK</Text>
+            <Pressable style={styles.button1} onPress={() => navigation.navigate('MachineLearning')}>
+                <Text style={styles.Text}>MACHINE LEARNING</Text>
             </Pressable>
-            <Pressable style={styles.button2} onPress={() => navigation.navigate('ValorantChampionship')}>
-                <Text style={styles.Text}>VALORANT CHAMPIONSHIP</Text>
+            <Pressable style={styles.button2} onPress={() => navigation.navigate('AI')}>
+                <Text style={styles.Text}>ARTIFICIAL INTELLIGENCE</Text>
+            </Pressable>
+            <Pressable style={styles.button2} onPress={() => navigation.navigate('GameDesign')}>
+                <Text style={styles.Text}>GAME DESIGN: 3D MODELING</Text>
+            </Pressable>
+            <Pressable style={styles.button2} onPress={() => navigation.navigate('UIUX')}>
+                <Text style={styles.Text}>UI/UX DEVELOPMENT</Text>
+            </Pressable>
+            <Pressable style={styles.button2} onPress={() => navigation.navigate('DataMining')}>
+                <Text style={styles.Text}>DATA MINING & STATISTICAL ANALYSIS</Text>
+            </Pressable>
+            <Pressable style={styles.button2} onPress={() => navigation.navigate('Technopreneurship')}>
+                <Text style={styles.Text}>TECHNOPRENEURSHIP</Text>
             </Pressable>
         </View>
         </View>
