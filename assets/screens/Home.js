@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, View, Text, Pressable, Alert, Image} from 'react-native'
+import Footer from '../components/footer'
 
 const Home = ({navigation}) => {
 
@@ -24,7 +25,7 @@ const Home = ({navigation}) => {
             <Pressable style={styles.button2} onPress={() => navigation.navigate('Technopreneurship')}>
                 <Text style={styles.Text}>TECHNOPRENEURSHIP</Text>
             </Pressable>
-           
+            <Footer/>
         </View>
         </View>
         
@@ -48,9 +49,9 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         elevation: 1,
         backgroundColor: '#FAC302',
+        marginTop: 240,
         width: 260
         
-
     },
     button2: {
         marginTop: 20,

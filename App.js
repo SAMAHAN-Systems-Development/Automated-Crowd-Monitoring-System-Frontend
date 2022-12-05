@@ -10,7 +10,7 @@ import GameDesign from './assets/screens/GameDesign'
 import UIUX from './assets/screens/UIUX'
 import DataMining from './assets/screens/DataMining'
 import Technopreneurship from './assets/screens/Technopreneurship'
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+
 
 const Stack = createNativeStackNavigator();
 

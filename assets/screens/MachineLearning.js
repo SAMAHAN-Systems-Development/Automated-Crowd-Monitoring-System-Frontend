@@ -3,9 +3,10 @@ import { BarCodeScanner } from "expo-barcode-scanner";
 import { StyleSheet, View, Button, Text, Pressable, Alert } from "react-native";
 import { Image } from "react-native";
 import axios from "axios";
+import Footer from '../components/footer'
 
 // CONFIGS
-import config from '../configurations/_config_SheetsTesting.js';
+import config from '../configurations/_config_SheetsTesting';
 
 const Home = ({ navigation }) => {
   console.log("App is working!");
@@ -139,6 +140,7 @@ const Home = ({ navigation }) => {
           color="#FAC302"
         />
       )}
+      <Footer/>
       </View>
     </View>
   );
@@ -155,7 +157,7 @@ const styles = StyleSheet.create({
   },
 
   barcodebox: {
-    marginTop: 10,
+    marginTop: 150,
     backgroundColor: "fff",
     alignItems: "center",
     justifyContent: "center",
