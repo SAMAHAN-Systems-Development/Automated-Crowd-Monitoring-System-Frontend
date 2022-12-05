@@ -7,5 +7,5 @@
 ## INSTRUCTIONS FOR CONFIG FILE
 1. Create `configurations` directory
    ```bash
-   ![alt text]([http://url](https://drive.google.com/file/d/1mvAzLPu7AOmQ8vw3NSTd7qbL6u8IzD0T/view?usp=share_link)/to/img.png)
+   ![config](https://user-images.githubusercontent.com/74962185/205588209-37be292b-d859-4717-8643-654be6aefd8c.png)
     ```
