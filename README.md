@@ -11,4 +11,4 @@
  
 2. Download and paste the config file inside the `configurations` directory
      
-     [Config file]([https://link-url-here.org](https://drive.google.com/file/d/1N1NA5x0eduRB-JHUSJN9MMVZarJ-Krgt/view?fbclid=IwAR0sMkFVCDzZr85_vc1xx9QMnRCwJqs21gCywml25RBMhJ9IpCHkWKKRfD8))
+     [Config file](https://drive.google.com/file/d/1N1NA5x0eduRB-JHUSJN9MMVZarJ-Krgt/view?fbclid=IwAR0sMkFVCDzZr85_vc1xx9QMnRCwJqs21gCywml25RBMhJ9IpCHkWKKRfD8)
