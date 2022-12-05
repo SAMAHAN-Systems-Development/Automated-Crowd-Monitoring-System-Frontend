@@ -3,4 +3,4 @@
 
 ## REQUIREMENTS
 * NodeJS
-* `credentials.json` file
+* `_config_SheetsTesting.js` file
