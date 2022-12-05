@@ -52,8 +52,8 @@ if(hasPermission === null) {
   //return the output in page
 
     return (
+      <View style={styles.container}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-           
              <View style={styles.barcodebox}>
       
       <BarCodeScanner
@@ -64,8 +64,8 @@ if(hasPermission === null) {
       {scanned && <Button title={'SCAN AGAIN'} onPress={() => setScanned(false)} color='#FAC302' />}
            
       
-            
-        </View>
+      </View> 
+      </View>
     )
 }
 
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     },
     maintext: {
       fontSize: 20,
-      color: 'black',
+      color: 'white',
       margin: 10,
       marginBottom: 20
       

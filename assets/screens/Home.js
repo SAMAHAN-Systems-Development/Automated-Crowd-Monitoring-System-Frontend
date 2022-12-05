@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Text, Pressable, Alert} from 'react-native'
+import { StyleSheet, View, Text, Pressable, Alert, Image} from 'react-native'
 
 const Home = ({navigation}) => {
 
@@ -24,8 +24,11 @@ const Home = ({navigation}) => {
             <Pressable style={styles.button2} onPress={() => navigation.navigate('Technopreneurship')}>
                 <Text style={styles.Text}>TECHNOPRENEURSHIP</Text>
             </Pressable>
+           
         </View>
         </View>
+        
+        
 
     )
 }
@@ -40,7 +43,7 @@ const styles = StyleSheet.create({
     button1: {
         alignItems: 'center',
         justifyContent: 'center',
-        paddingVertical: 12,
+        paddingVertical: 10,
         paddingHorizontal: 10,
         borderRadius: 4,
         elevation: 1,
@@ -50,7 +53,7 @@ const styles = StyleSheet.create({
 
     },
     button2: {
-        marginTop: 10,
+        marginTop: 20,
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 12,

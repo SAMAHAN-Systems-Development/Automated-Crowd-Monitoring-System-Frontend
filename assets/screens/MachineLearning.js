@@ -122,8 +122,8 @@ const Home = ({ navigation }) => {
   }
   //return the output in page
     return (
+      <View style={styles.container}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          
             <View style={styles.barcodebox}>
       
       <BarCodeScanner
@@ -139,6 +139,7 @@ const Home = ({ navigation }) => {
           color="#FAC302"
         />
       )}
+      </View>
     </View>
   );
 };
@@ -148,7 +149,7 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#13142A",
+    backgroundColor: '#13142A',
     alignItems: "center",
     justifyContent: "center",
   },
@@ -166,8 +167,9 @@ const styles = StyleSheet.create({
   },
   maintext: {
     fontSize: 20,
-    color: "black",
+    color: "white",
     margin: 10,
     marginBottom: 20,
   },
+  
 });
