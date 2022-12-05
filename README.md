@@ -3,3 +3,5 @@
 
 ## REQUIREMENTS
 * `_config_SheetsTesting.js` file
+
+## INSTRUCTIONS FOR CONFIG FILE
