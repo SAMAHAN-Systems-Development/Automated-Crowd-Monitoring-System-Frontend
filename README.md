@@ -12,3 +12,6 @@
 2. Download and paste the config file inside the `configurations` directory
      
      [Config file](https://drive.google.com/file/d/1N1NA5x0eduRB-JHUSJN9MMVZarJ-Krgt/view?fbclid=IwAR0sMkFVCDzZr85_vc1xx9QMnRCwJqs21gCywml25RBMhJ9IpCHkWKKRfD8)
+
+## OR
+1. Create `_config_SheetsTesting.js` file inside the `configurations` directory
