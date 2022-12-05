@@ -2,5 +2,4 @@
 
 
 ## REQUIREMENTS
-* NodeJS
 * `_config_SheetsTesting.js` file
