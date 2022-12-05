@@ -15,3 +15,9 @@
 
 ## OR
 1. Create `_config_SheetsTesting.js` file inside the `configurations` directory
+
+2. Paste this code inside `_config_SheetsTesting.js` 
+     
+      ```bash
+    cd sheets
+    ```
