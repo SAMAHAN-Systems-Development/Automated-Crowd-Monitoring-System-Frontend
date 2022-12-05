@@ -7,7 +7,8 @@
 ## INSTRUCTIONS FOR CONFIG FILE
 1. Create `configurations` directoryy
    
-   ![config](https://user-images.githubusercontent.com/74962185/205588209-37be292b-d859-4717-8643-654be6aefd8c.png)
+   ![config](![config](https://user-images.githubusercontent.com/74962185/205629424-232235b3-625f-43b8-bf3c-5ca56a7df35f.png)
+
  
 2. Download and paste the config file inside the `configurations` directory
      
