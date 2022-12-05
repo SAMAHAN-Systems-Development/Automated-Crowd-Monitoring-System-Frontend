@@ -2,7 +2,7 @@
 
 
 ## REQUIREMENTS
-* `_config_SheetsTesting.js` file
+* `_config_SheetsTesting.js`
 
 ## INSTRUCTIONS FOR CONFIG FILE
 1. Create `configurations` directoryy
