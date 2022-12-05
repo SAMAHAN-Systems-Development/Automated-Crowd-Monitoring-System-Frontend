@@ -9,3 +9,4 @@
    
    ![config](https://user-images.githubusercontent.com/74962185/205588209-37be292b-d859-4717-8643-654be6aefd8c.png)
  
+2. Create `configurations` directoryy
