@@ -1,15 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View, Alert, Button, Pressable, onPress } from 'react-native';
+import { StyleSheet, Text, View, Alert, Button, Pressable, onPress, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screens/Home'
-import MachineLearning from './screens/MachineLearning'
-import AI from './screens/AI'
-import GameDesign from './screens/GameDesign'
-import UIUX from './screens/UIUX'
-import DataMining from './screens/DataMining'
-import Technopreneurship from './screens/Technopreneurship'
+import HomeScreen from './assets/screens/Home'
+import MachineLearning from './assets/screens/MachineLearning'
+import AI from './assets/screens/AI'
+import GameDesign from './assets/screens/GameDesign'
+import UIUX from './assets/screens/UIUX'
+import DataMining from './assets/screens/DataMining'
+import Technopreneurship from './assets/screens/Technopreneurship'
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const Stack = createNativeStackNavigator();
@@ -31,6 +31,7 @@ const MyStack = () => {
         headerStyle: {
         backgroundColor: '#13142A'
         },
+        cardStyle: { backgroundColor: '#13142A' },
         headerTitleStyle: {
           color: 'white'
         },
@@ -83,7 +84,6 @@ const MyStack = () => {
         }}
         />
 
-
         <Stack.Screen name="DataMining"
         component={DataMining} 
         options={{ title: 'Data Mining & Statistical Analysis',
@@ -114,10 +114,14 @@ const MyStack = () => {
 
       </Stack.Navigator>
     </NavigationContainer>
+
+    
   );
 };
 
 export default MyStack
+
+
 
 
   
