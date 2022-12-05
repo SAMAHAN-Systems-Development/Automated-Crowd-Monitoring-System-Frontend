@@ -5,7 +5,7 @@
 * `_config_SheetsTesting.js` file
 
 ## INSTRUCTIONS FOR CONFIG FILE
-1. Change directory to `/sheets`
+1. Create`configurations` directory
    ```bash
     cd sheets
     ```
