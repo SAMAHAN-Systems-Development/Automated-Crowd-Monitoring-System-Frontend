@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/Smiley.png",
         "backgroundColor": "#13142A"
-      }
+      },
+      "package": "com.sysdev.app"
     },
     "web": {
       "favicon": "./assets/images/Smiley.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "561b74f5-5477-477a-a61d-22d0f05a2632"
+      }
     }
   }
 }
