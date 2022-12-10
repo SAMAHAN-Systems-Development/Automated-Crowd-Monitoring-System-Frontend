@@ -6,7 +6,7 @@ import axios from "axios";
 import Footer from '../components/footer'
 
 // CONFIGS
-import config from '../configurations/_config_SheetsTesting';
+import config from '../../configurations/config-ML.js';
 
 const Home = ({ navigation }) => {
   console.log("App is working!");

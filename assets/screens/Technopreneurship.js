@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 
 
 // CONFIGS
-import config from '../configurations/_config_SheetsTesting';
+import config from '../../configurations/config-Technopreneurship.js';
 
 const Home = ({ navigation }) => {
   console.log("App is working!");
